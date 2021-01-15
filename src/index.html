@@ -2,89 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Hipster shit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Hipster shit</title>
 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDeQZ6mPtpOVQMqtMjS2_dS0Soyn7BTpc&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <style type="text/css">
-      /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;
-        /* The height is 400 pixels */
-        width: 100%;
-        /* The width is the width of the web page */
-      }
-    </style>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of X
-        const uluru = { lat: 50.062665570547516, lng: 14.437627936900139 };
-        // The map, centered at X
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 16,
-          center: uluru,
-        });
-        // The marker X
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDeQZ6mPtpOVQMqtMjS2_dS0Soyn7BTpc&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  <style type="text/css">
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+  </style>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of X
+      const uluru = {
+        lat: 50.062665570547516,
+        lng: 14.437627936900139
+      };
+      // The map, centered at X
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 16,
+        center: uluru,
+      });
+      // The marker X
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
 </head>
 
 
-<header>
-    <div class="header">
-        <a class="logo" href="index.html">
-            <img src="/img/logo.svg" alt="hipster-logo">
-        </a>
-        <nav class="header__nav">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="coffee.html">Coffee</a>
-            <a href="story.html">Our Story</a>
-        </nav>
-    </div>
-</header>
+
 
 <body>
+  <header>
+    <div class="header">
+      <a class="logo" href="index.html">
+        <img src="/img/logo.svg" alt="hipster-logo">
+      </a>
+      <nav class="header__nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="story.html">Our Story</a>
+      </nav>
+    </div>
+  </header>
 
+
+  <main>
     <h1>Generic Hipster Coffee</h1>
 
     <h2>Specilaity cofee, fresh food and local community.</h2>
 
     <img src="../img/counter.jpg" alt="">
 
-   <div class="container">
-       <div class="info__block">
-           <h3>Opening Hours</h3>
-           Sunday - Thrusday: 8:00 - 23:00 <br>
-           Friday - Saturday: 8:00 - 1:00
-       </div>
-    
-       <div class="info__block">
-           <h3>Book a table</h3> 
-           Call +1 415-321-4589
-       </div>
-    
-       <div class="info__block">
-           <h3>Address</h3> 
-           321 Ivy
-       </div>   
-   </div>
+    <div class="container">
+      <div class="info__block">
+        <h3>Opening Hours</h3>
+        Sunday - Thrusday: 8:00 - 23:00 <br>
+        Friday - Saturday: 8:00 - 1:00
+      </div>
+
+      <div class="info__block">
+        <h3>Book a table</h3>
+        Call +1 415-321-4589
+      </div>
+
+      <div class="info__block">
+        <h3>Address</h3>
+        321 Ivy
+      </div>
+    </div>
 
 
     <div id="map"></div>
+  </main>
 
+  <footer>
+    <div class="footer">
+      <nav class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="coffee.html">Coffee</a>
+        <a href="story.html">Our Story</a>
+      </nav>
+
+      <div class="footerfollow">
+
+        <div>#hipstersmakecoffe</div>
+        <div>Follow us on
+          <a href="https://twitter.com/">Twitter</a>
+          and
+          <a href="https://www.instagram.com/">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 
