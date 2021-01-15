@@ -1,11 +1,44 @@
 
 img {
     width: 100%;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 #map {
     width: 100%;
 
 }
-  
+
+.container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-size: 0.55em;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+
+    }
+
+    .info__block {
+        width: 31%;
+        padding: 1em;
+        line-height: 1.5em;
+
+        @media (max-width: 576px) {
+            width: 100%;
+    
+        }
+
+        h3 {
+            margin: 0 0 1em 0;
+            padding: 0;
+            size: 1.5em;
+            text-transform: uppercase;
+            font-weight: 300;
+            
+        }
+
+    }
+}
