@@ -6,6 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Hipster shit</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDeQZ6mPtpOVQMqtMjS2_dS0Soyn7BTpc&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 50.062665570547516, lng: 14.437627936900139 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 16,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
 </head>
 
 <a href="coffee.html">coffee</a>
@@ -21,9 +53,22 @@
 
     <img src="../img/counter.jpg" alt="">
 
-    <div></div>
+   <div class="info__block">
+       Opening Hourse
+       Sunday - Thrusday: 8:00 - 23:00
+       Friday - Saturday: 8:00 - 1:00
+   </div>
 
-    <img src="../img/counter.jpg" alt="">
+   Book a table 
+   Call +1 415-321-4589
+
+   Address 
+   321 Ivy
+
+
+    <img src="../img/map.png" alt="">
+    <div id="map"></div>
+
 
 
 
