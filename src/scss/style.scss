@@ -1,10 +1,17 @@
+/* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* STYLE SHEETS */
 @import 'home';
 @import 'menu';
 @import 'coffee';
 @import 'story';
 @import 'header-footer';
+
+/* COLOURS */
+$header_grey: #F8F9FA;
+$light_grey: #F0F1F2;
+$dark_grey: #343A40;
 
 * {
     box-sizing: border-box;
@@ -13,4 +20,16 @@
 
 html {
     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 200;
+
+    body {
+        width: 70%;
+        margin: 0 auto;
+
+        h1,
+        h2 {
+            font-weight: 300;
+        }
+    }
+
 }

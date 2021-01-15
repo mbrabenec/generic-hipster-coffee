@@ -1,3 +1,29 @@
-h1 {
-    color: green;
+.coffee__intro {
+    margin: 1rem 0;
+
+    &--aside {
+        font-size: 75%;
+        margin: 1rem 0;
+
+    }
+}
+
+.coffee {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    align-self: center;
+
+    &__item {
+        width: 48%;
+    }
+
+    &__description {
+        align-self: left;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }
