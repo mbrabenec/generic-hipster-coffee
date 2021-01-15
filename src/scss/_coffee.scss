@@ -17,10 +17,12 @@
 
     &__item {
         width: 48%;
+        margin: 1rem 0;
 
         h2 {
             border-bottom: 1px solid;
             background: $light-grey;
+            padding: .5rem;
         }
     }
 
@@ -28,6 +30,10 @@
         align-self: left;
         font-size: .8em;
         font-weight: 400;
+        background: $light-grey;
+        height: 6rem;
+        padding: .5rem;
+
 
         &--flavour {
             font-style: italic;
