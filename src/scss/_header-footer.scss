@@ -38,6 +38,10 @@ header {
                 color: $dark-grey;
                 padding: 1rem;
 
+                &:hover {
+                    font-weight: bold;
+                }
+
             }
         }
     }
