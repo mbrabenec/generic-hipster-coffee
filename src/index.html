@@ -8,6 +8,7 @@
     <title>Hipster shit</title>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
+
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDeQZ6mPtpOVQMqtMjS2_dS0Soyn7BTpc&callback=initMap&libraries=&v=weekly"
       defer
@@ -24,20 +25,21 @@
     <script>
       // Initialize and add the map
       function initMap() {
-        // The location of Uluru
+        // The location of X
         const uluru = { lat: 50.062665570547516, lng: 14.437627936900139 };
-        // The map, centered at Uluru
+        // The map, centered at X
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 16,
           center: uluru,
         });
-        // The marker, positioned at Uluru
+        // The marker X
         const marker = new google.maps.Marker({
           position: uluru,
           map: map,
         });
       }
     </script>
+    
 </head>
 
 <a href="coffee.html">coffee</a>
@@ -66,7 +68,7 @@
    321 Ivy
 
 
-    <img src="../img/map.png" alt="">
+
     <div id="map"></div>
 
 
