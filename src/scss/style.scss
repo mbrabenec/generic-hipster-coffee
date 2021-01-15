@@ -6,7 +6,7 @@
 @import 'coffee';
 @import 'story';
 @import 'header-footer';
-
+@import 'index';
 
 * {
     box-sizing: border-box;
@@ -24,6 +24,9 @@ html {
         h1,
         h2 {
             font-weight: 300;
+            line-height: 1.6em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
         }
     }
 

@@ -20,7 +20,7 @@ body {
         justify-content: space-between;
         margin: 2em 0;
     
-        @media(max-width: 400px) {
+        @media(max-width: 576px) {
             flex-flow: column nowrap;
             width: 90%
         }
@@ -32,7 +32,7 @@ body {
             flex-flow: column nowrap;
             margin-bottom: 1em;
     
-            @media(max-width: 400px) {
+            @media(max-width: 576px) {
                 width: 100%;
             }
     
