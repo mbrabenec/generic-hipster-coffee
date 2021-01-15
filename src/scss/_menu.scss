@@ -31,6 +31,11 @@ body {
         display: flex;
         flex-flow: column nowrap;
 
+        .section___title {
+            font-size: 1.5em;
+            color: red;
+        }
+
         .section__item {
             color: black;
 
