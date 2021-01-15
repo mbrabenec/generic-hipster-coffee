@@ -3,53 +3,62 @@
 }
 
 body {
-    width: 70%;
+    //width: 70%;
     margin: 0 auto;
-}
 
-.menu {
-    
-    background-color: white;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-    @media(max-width: 400px) {
-        flex-flow: column nowrap;
-        width: 90%
+    h2 {
+        margin: 0;
+        padding: 0;
     }
-    
-    .section {
-        width: 48%;
-        padding: 1em;
 
+    .menu {
+    
+        background-color: white;
         display: flex;
-        flex-flow: column nowrap;
-
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 2em 0;
+    
         @media(max-width: 400px) {
-            width: 100%;
+            flex-flow: column nowrap;
+            width: 90%
         }
-
-        .section__title {
-            font-size: 1.4em;
-            padding: 0 0 0.5em 0;
-            
-        }
-
-        .section__item {
-            color: black;
-
+        
+        .section {
+            width: 48%;
+    
             display: flex;
-            div:first-child {
-                min-width: 80%;
-                text-align: left;
-                padding-right: 1rem;
+            flex-flow: column nowrap;
+    
+            @media(max-width: 400px) {
+                width: 100%;
             }
     
-            div:last-child {
-                min-width: 20%;
-                text-align: left;
+            .section__title {
+                font-size: 1.2em;
+                padding: 0 0 0.5em 0;
+                
+            }
+    
+            .section__item {
+                color: black;
+    
+                display: flex;
+                div:first-child {
+                    min-width: 80%;
+                    text-align: left;
+                    padding-right: 1rem;
+                }
+        
+                div:last-child {
+                    min-width: 20%;
+                    text-align: left;
+                }
             }
         }
     }
+
 }
+
+
+
