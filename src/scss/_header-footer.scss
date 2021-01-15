@@ -16,7 +16,6 @@ header {
         }
 
         // width: 70%;
-
         .logo {
             width: 15%;
         }
@@ -40,32 +39,28 @@ header {
                 &:hover {
                     font-weight: bold;
                 }
-
             }
         }
     }
 }
 
-
-
 footer {
+    margin: 0 0 0 0;
+    padding: 7em;
     background: $dark-grey;
     color: white;
     text-align: center;
     height: 30vh;
-    padding: 3rem 0 2rem;
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        &__links {
-            a {
-                padding: 1rem;
-            }
-
-        }
+    .footer__links a {
+        padding: 1em 2em;
+        margin: 1em;
+        color: honeydew;
+        text-decoration: none;
     }
+}
+
+.hip {
+    font-size: 3em;
+    font-weight: 600;
 }
