@@ -12,11 +12,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
     align-self: center;
 
     &__item {
         width: 48%;
+
+        h2 {
+            // background: ;
+
+        }
     }
 
     &__description {
