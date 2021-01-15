@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    .owners {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+
+        .owner {
+            img {
+                border-radius: 50%;
+            }
+
+            &__name {
+                font-size: 150%;
+            }
+
+            &__description {
+                margin: 1rem
+            }
+        }
+    }
+
+    .contact {
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+
+            .contact__input {
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-around;
+                text-align: center;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid $light-grey;
+                    margin: .4rem;
+
+                    &::placeholder {
+                        font-family: 'Roboto Condensed', sans-serif;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        textarea {
+            height: 5rem;
+            border: none;
+            border-bottom: 1px solid $light-grey;
+            resize: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            font-family: 'Roboto Condensed', sans-serif;
+            width: 40%;
+            align-self: center;
+            margin: .4rem;
+        }
+
+    }
+
+}
